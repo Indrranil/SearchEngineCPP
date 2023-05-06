@@ -1,0 +1,50 @@
+Hey everyone, in this blog we will go through some benefits of running Apache Kafka in OAM, also the benefits of OAM over K8s.
+
+What is an event-driven architecture (EDA)?
+
+
+An event-driven architecture uses events to trigger and communicate between decoupled services and is common in modern applications built with microservices.
+
+Benefits of Kafka Event-Driven Architecture
+Let’s discover some of the benefits of Kafka Event-Driven Architecture:
+
+Decoupling: Brokers decouple services to make it easier to add new ones or adjust existing ones. Hence, the long sequences are broken and synced workflows can be decomposed easily.
+
+Efficient State Transfer: Your system’s dataset includes Events. Streams are a convenient way to distribute datasets such that they can be reassembled and queried within a limited environment. When resources are available, messages are buffered and consumed.
+
+Faster Operations: It’s easy to merge, join, and enrich data from several services. Joins are simple and quick to be executed. For high-volume Event processing, Event-Driven services scale easily.
+
+Easy Traceability: When there’s a central, immutable, retentive narrative documenting each action as it unfolds in time, it’s simpler to debug the errors and issues.
+
+Problem with Kafka in Kubernetes
+Kafka can be deployed and run in Kubernetes, there are several challenges related to StatefulSet management, storage and data management, networking and security, monitoring and observability, scalability and performance, as well as upgrades and maintenance that users may encounter when running Kafka in a Kubernetes environment. Proper planning, configuration, and monitoring can help mitigate these challenges and ensure a stable and reliable Kafka deployment in Kubernetes.
+
+What is Apache Kafka?
+
+
+It is an event-streaming platform that is used for building real-time data streaming and processing applications. It is designed to handle a high volume, high throughput, and low-latency data streams, making it well-suited for use cases such as log processing, data ingestion, real-time analytics, and event-driven architectures.
+
+What is an OPEN APPLICATION MODEL (OAM)?
+
+
+OAM is an open-source project governed by the Cloud Native Computing Foundation (CNCF). It provides a standard way to describe and package could applications in a language and framework-agnostic manner enabling interoperability and portability across different cloud platforms.
+
+What problem does OAM solve?
+
+
+OAM has an application-centric approach which focuses on application building and not on the underlying infrastructure.
+
+Application Deployment Complexity: OAM simplifies the process of defining and deploying complex applications by providing a clear separation of concerns between application developers and infrastructure operators.
+
+Lack of Portability: promotes portability by providing a vendor-neutral, cloud-agnostic approach to defining applications.
+
+Application Reusability: enables developers to define applications as composable components that can be reused across different applications.
+
+Collaboration between Devs and Ops: promotes collaboration between application developers and infrastructure operators by providing a clear separation of concerns and well-defined interfaces.
+
+Open application model for Apache Kafka
+Running Kafka in OAM can help simplify the management of Kafka clusters, improve observability, enable autoscaling, promote modularity and extensibility, and enhance flexibility and portability, resulting in more efficient and reliable Kafka deployments.
+
+Conclusion
+In conclusion, leveraging OAM for running Apache Kafka bring several benefits to event-driven architectures. By providing a standard, application-centric approach to defining and deploying Kafka clusters, OAM simplifies the management, promotes portability, enables application reusability, and encourages collaboration between developers and operators. Overall, running Kafka in OAM can lead to more streamlined, observable, scalable, and portable Kafka deployments, reducing complexity and improving the reliability of event-driven architectures.
+
